@@ -1,0 +1,91 @@
+:root {
+    --color-first: #eb2f64;
+    --color-second: #ff3366;
+    --color-third: #ba265a;
+    --light-first: #faf9f9;
+    --light-second: #f4f2f2;
+    --light-third: #ccc;
+    --grey-first: #333;
+    --grey-second: #777777;
+    --grey-third: #999999;
+    --orange: #ee7752;
+    --blue: #23a6d5;
+    --green: #30d636;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 400;
+    line-height: 1.6;
+    height: 90vh;
+    color: var(--grey-second);
+    background: linear-gradient(-45deg, var(--orange), var(--color-second), var(--blue), var(--green));
+    background-size: 400% 400%;
+    -webkit-animation: Gradient 30s ease infinite;
+    -moz-animation: Gradient 30s ease infinite;
+    animation: Gradient 30s ease infinite;
+
+    @media only screen and (max-width: 450px) {
+        background: linear-gradient(var(--orange), var(--color-second));
+        background-repeat: no-repeat;
+        background-size: 400% 400%;
+    }
+}
+
+@-webkit-keyframes Gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@-moz-keyframes Gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes Gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
