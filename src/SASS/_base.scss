@@ -1,16 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono|Bungee+Shade');
+
 :root {
-    --color-first: #eb2f64;
-    --color-second: #ff3366;
-    --color-third: #ba265a;
+    --color-first: #672feb;
+    --color-second: #515bf0;
+    --color-react: #23a6d5;
+    --color-ts: #0078D7;
     --light-first: #faf9f9;
     --light-second: #f4f2f2;
     --light-third: #ccc;
     --grey-first: #333;
     --grey-second: #777777;
     --grey-third: #999999;
-    --orange: #ee7752;
-    --blue: #23a6d5;
-    --green: #30d636;
+    --color-redux: rgb(118, 74, 188);
+    --color-graphql: #e535ab;
+    --color-node: rgb(131, 205, 41);
 }
 
 * {
@@ -30,14 +33,14 @@ body {
     line-height: 1.6;
     height: 90vh;
     color: var(--grey-second);
-    background: linear-gradient(-45deg, var(--orange), var(--color-second), var(--blue), var(--green));
+    background: linear-gradient(-45deg, var(--color-graphql), var(--color-second), var(--color-react), var(--color-node));
     background-size: 400% 400%;
     -webkit-animation: Gradient 30s ease infinite;
     -moz-animation: Gradient 30s ease infinite;
     animation: Gradient 30s ease infinite;
 
     @media only screen and (max-width: 450px) {
-        background: linear-gradient(var(--orange), var(--color-second));
+        background: linear-gradient(var(--color-react), var(--color-second));
         background-repeat: no-repeat;
         background-size: 400% 400%;
     }
