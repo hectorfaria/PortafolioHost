@@ -9,16 +9,17 @@ const IndexPage = () => (
 	<main className="review">
 		<div className="code-container">
 			<span>
-				Hi!, My name is Hector Faria, I'm a self-taught developer, I'm quite new in the development enviroment
-				but I'm always willing to learn! , Interested in working with me?{' '}
-				<a href="mailto:hector_faria@hotmail.com" className="contact rainbow">
+				Hi, My name is <b>Hector Faria</b>, I like making web applications they are my passion!, interested in working with me?{' '}
+				<b><a href="mailto:hector_faria@hotmail.com" className="contact rainbow">
 					Contact me
 				</a>
+				</b>
 			</span>
 		</div>
 		<div className="detail">
 			<div className="info-container">
-				const{' '}
+			asd
+				{/* const{' '}
 				<a href="mailto:hector_faria@hotmail.com" className="contact rainbow">
 					contactme
 				</a>{' '}
@@ -51,7 +52,7 @@ const IndexPage = () => (
 					</span>
 					<span className="white">,</span>
 				</div>
-				<span className="white">&#125;&#41;&#59;</span>
+				<span className="white">&#125;&#41;&#59;</span> */}
 			</div>
 
 			<div className="info-projects">
