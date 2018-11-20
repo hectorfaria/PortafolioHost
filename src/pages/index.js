@@ -1,20 +1,36 @@
 import React from 'react';
 import one from '../assets/1.png';
 import two from '../assets/2.png';
-
+import Layout from '../components/layout';
+import Typed from 'react-typed';
 
 //natur css => http://nature-norge.surge.sh/
 
 const IndexPage = () => (
+	<Layout>
 	<main className="review">
 		<div className="code-container">
 			<span>
-				Hi, My name is <b>Hector Faria</b>, I like making web applications they are my passion!, interested in working with me?{' '}
-				<b><a href="mailto:hector_faria@hotmail.com" className="contact rainbow">
+				Hi, My name is <b>Hector Faria</b>, I like making web applications they are my passion!
+				<Typed 
+                strings={[
+                    'Search for products',
+                    'Search for categories',
+                    'Search for brands']}
+                    typeSpeed={40}
+                    backSpeed={50} 
+                    attr="placeholder"
+                    loop >
+                    <input type="text"/>
+                </Typed>
+			</span>
+			{/* <div style={{ textAlign: 'center', marginTop: '2rem'}}>
+			<h3>
+			<a href="mailto:hector_faria@hotmail.com" className="contact rainbow">
 					Contact me
 				</a>
-				</b>
-			</span>
+			</h3>
+				</div> */}
 		</div>
 		<div className="detail">
 			<div className="info-container">
@@ -85,6 +101,7 @@ const IndexPage = () => (
 			</div>
 		</div>
 	</main>
+	</Layout>
 );
 
 export default IndexPage;
