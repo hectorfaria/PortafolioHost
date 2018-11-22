@@ -1,9 +1,9 @@
 import React from 'react';
-
+import Layout from '../components/layout';
 const GraphQLPage = () => (
-	<div>
+	<Layout>
 		    I am Graphql
-	</div>
+	</Layout>
 );
 
 export default GraphQLPage;

@@ -1,9 +1,9 @@
 import React from 'react';
 import Layout from '../components/layout';
-const NodePage = () => (
+const TypesPage = () => (
 	<Layout>
-		    I am Node
+		    Typescript
 	</Layout>
 );
 
-export default NodePage;
+export default TypesPage;

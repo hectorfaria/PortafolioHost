@@ -63,13 +63,13 @@
     background-color: white;
     display: block;
     border-radius: 5px;
-    padding: 4%;
+    padding: 3%;
+    padding-left: 16%;
     margin: auto;
     width: 80%;
-    margin-top: 5%;
+    margin-top: 3%;
     font-size: 1vw;
     box-shadow: 0 2vh 2.5vh rgba(0, 0, 0, 0.3);
-
     @media only screen and (max-width: 450px) {
         font-size: 2rem;
     }

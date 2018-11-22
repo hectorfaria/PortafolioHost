@@ -1,9 +1,9 @@
 import React from 'react';
-
+import Layout from '../components/layout';
 const gatsbyPage = () => (
-	<div>
+	<Layout>
 		    I am gatsby
-	</div>
+	</Layout>
 );
 
 export default gatsbyPage;

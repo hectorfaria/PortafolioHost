@@ -1,27 +1,46 @@
-import React from 'react';
-import Helmet from 'react-helmet';
-import '../layouts/main.css';
-import Container from './Container';
-import { StaticQuery, graphql } from "gatsby"
+import React from 'react'
+import PropTypes from 'prop-types'
+import Helmet from 'react-helmet'
+import { StaticQuery, graphql } from 'gatsby'
 
- export default ({ children, location, history, match }) => (
-       <StaticQuery
-         query={graphql`
-           query LayoutQuery {
-             site {
-               siteMetadata {
-                 title
-               }
-             }
-           }
-         `}
-         render={data => (
-           <>
-             <Helmet titleTemplate={`%s | ${data.site.siteMetadata.title}`} defaultTitle={data.site.siteMetadata.title} />
-             <div>
-               <Container>{children}</Container>
-             </div>
-           </>
-         )}
-       />
-     )
+import Header from './header'
+import SideBar from './sidebar'
+import './main.css'
+
+const Layout = ({ children }) => (
+  <StaticQuery
+    query={graphql`
+      query SiteTitleQuery {
+        site {
+          siteMetadata {
+            title
+          }
+        }
+      }
+    `}
+    render={data => (
+      <>
+        <Helmet
+          title={data.site.siteMetadata.title}
+          meta={[
+            { name: 'description', content: 'Sample' },
+            { name: 'keywords', content: 'sample, something' },
+          ]}
+        >
+          <html lang="en" />
+        </Helmet>
+        <div className="container">
+        <Header />
+        <div
+          className="content"
+        >
+          <SideBar />
+          {children}
+        </div>
+        </div>
+      </>
+    )}
+  />
+)
+
+export default Layout

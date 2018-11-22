@@ -1,6 +1,6 @@
 import React from 'react';
-import sgithub from '../assets/SVG/github.svg';
-import sattac from '../assets/SVG/attachment.svg';
+import sgithub from '../images/SVG/github.svg';
+import sattac from '../images/SVG/attachment.svg';
 
 export default () => {
 	return (

@@ -1,13 +1,12 @@
 import React from 'react';
-//import scode from '../assets/SVG/code.svg';
-import info from '../assets/SVG/info.svg';
-import sreact from '../assets/SVG/react.svg';
-import snode from '../assets/SVG/node.svg';
-import ssass from '../assets/SVG/sass.svg';
-import sgraphql from '../assets/SVG/graphql.svg';
-import sgatsby from '../assets/SVG/gatsby.svg';
-import stypes from '../assets/SVG/typescript.svg';
-import { navigate } from "gatsby"
+import info from '../images/SVG/info.svg';
+import sreact from '../images/SVG/react.svg';
+import snode from '../images/SVG/node.svg';
+import ssass from '../images/SVG/sass.svg';
+import sgraphql from '../images/SVG/graphql.svg';
+import sgatsby from '../images/SVG/gatsby.svg';
+import stypes from '../images/SVG/typescript.svg';
+import { Link } from "gatsby"
 
 // This has to be seriously refactor to a simple code. WIP
 
@@ -15,20 +14,20 @@ export default () => {
 	return (
 		<nav className="sidebar">
 			<ul className="side-nav">
-				<div onClick={() => navigate(`/`)}  className="side-nav__link">
+				<Link to="/" className="side-nav__link" activeClassName="selected">
 					<li className="side-nav__item side-nav__item--info">
 						<img src={info} className="side-nav__icon" alt=""  />
 
 						<span>Home</span>
 					</li>
-				</div>
-				<div onClick={() => navigate(`/react`)} className="side-nav__link">
-					<li className="side-nav__item">
-						<img src={sreact} className="side-nav__icon" alt="" />
-						<span>React</span>
-					</li>
-				</div>
-				{/* <Link className="side-nav__link">
+				</Link>
+				<Link to="/react" className="side-nav__link" activeClassName="selected">
+				 	<li className="side-nav__item">
+				 		<img src={sreact} className="side-nav__icon" alt="" />
+				 		<span>React</span>
+				 	</li>
+				 </Link> 
+				{/* <Link className="side-nav__link" activeClassName="selected">
 					<li className="side-nav__item">
 						<svg
 							aria-labelledby="simpleicons-redux-icon"
@@ -45,37 +44,37 @@ export default () => {
 						<span>Redux</span>
 					</li>
 				</Link> */}
-				<div onClick={() => navigate(`/node`)}  className="side-nav__link">
+				<Link to="/node" activeClassName="selected" className="side-nav__link">
 					<li className="side-nav__item">
 						<img src={snode} className="side-nav__icon" alt=""  />
 						<span>Node.js</span>
 					</li>
-				</div>
-				<div onClick={() => navigate(`/sass`)}  className="side-nav__link">
+				</Link>
+				<Link to="/sass" activeClassName="selected"  className="side-nav__link">
 					<li className="side-nav__item">
 						<img src={ssass} className="side-nav__icon"  alt="" />
 						<span>Sass</span>
 					</li>
-				</div>
-				<div onClick={() => navigate(`/graphql`)}  className="side-nav__link">
+				</Link>
+				<Link to="/graphql" activeClassName="selected" className="side-nav__link">
 					<li className="side-nav__item">
 						<img src={sgraphql} className="side-nav__icon"  alt="" />
 						<span>GraphQL</span>
 					</li>
-				</div>
-				<div onClick={() => navigate(`/gatsby`)} className="side-nav__link">
+				</Link>
+				<Link to="/gatsby" activeClassName="selected" className="side-nav__link">
 					<li className="side-nav__item">
 						<img src={sgatsby} className="side-nav__icon" alt=""  />
 						<span>Gatsby</span>
 					</li>
-				</div>
-				<div onClick={() => navigate(`/types`)} className="side-nav__link">
+				</Link>
+				<Link to="/types" activeClassName="selected" className="side-nav__link">
 					<li className="side-nav__item">
 						<img src={stypes} className="side-nav__icon" alt=""  />
 						<span>TypeScript</span>
 						<label className="side-nav__new">New</label>
 					</li>
-				</div>
+				</Link>
 			</ul>
 		</nav>
 	);

@@ -1,9 +1,9 @@
 import React from 'react';
-
+import Layout from '../components/layout';
 const SassPage = () => (
-	<div>
+	<Layout>
 		    I am Sass
-	</div>
+	</Layout>
 );
 
 export default SassPage;
