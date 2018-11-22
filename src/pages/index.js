@@ -48,53 +48,27 @@ const IndexPage = () => (
 						</span>
 					</div>
 					<div className="detail">
-						<div className="info-container">
-							<div style={{ textAlign: 'center', marginTop: '2rem' }}>
-								<h2>
-									<a href="mailto:hector_faria@hotmail.com" className="contact rainbow">
-										Contact me
-									</a>
-								</h2>
-							</div>
-							{/* const{' '}
-				<a href="mailto:hector_faria@hotmail.com" className="contact rainbow">
-					contactme
-				</a>{' '}
-				<span className="white">=</span> new <span className="green">DeveloperInfo</span>{' '}
-				<span className="white">&#40;&#123;</span>{' '}
-				<div className="contact">
-					&#8194;&#8194;&#8194;github:{' '}
-					<span className="orange">
-						<a className="orange" href="https://github.com/yardiewizardie">
-							"yardiewizardie"
-						</a>
-					</span>
-					<span className="white">,</span>
-				</div>
-				<div className="contact">
-					&#8194;&#8194;&#8194;email:{' '}
-					<span className="orange">
-						<a className="orange" href="mailto:hector_faria@hotmail.com">
-							"hector_faria@hotmail.com"
-						</a>
-					</span>
-					<span className="white">,</span>
-				</div>
-				<div className="contact">
-					&#8194;&#8194;&#8194;upwork:{' '}
-					<span className="orange">
-						<a className="orange" href="https://www.upwork.com/freelancers/~01a76b9ab7d95f09b0">
-							"hectorfaria"
-						</a>
-					</span>
-					<span className="white">,</span>
-				</div>
-				<span className="white">&#125;&#41;&#59;</span> */}
-						</div>
-
 						<div className="info-projects">
 							<div className="info-projects__title">Projects</div>
 							<div className="info-projects__project">
+								<h2 className="info-projects__subtitle">Norge Nature</h2>
+								<span className="name">
+									Webpage travel agency about Norwegian destinations and interesting places.
+								</span>
+								<a className="info-projects__blur" href="http://nature-norge.surge.sh/">
+									<Img className="info-projects__img" fluid={data.imageOne.childImageSharp.fluid} />
+								</a>
+								<div className="info-projects__list">
+									<ul className="name">React</ul>
+									<ul className="name">BEM</ul>
+									<ul className="name">Redux</ul>
+									<ul className="name">Sass</ul>
+								</div>
+							</div>
+							<div className="info-projects__project">
+								<h2 className="info-projects__subtitle">Sudookie Movies</h2>
+								<span className="name">Personal project of watching movies together with friends.</span>
+								<Img className="info-projects__img" fluid={data.imageTwo.childImageSharp.fluid} />
 								<div className="info-projects__list">
 									<ul className="name">React</ul>
 									<ul className="name">MongoDB</ul>
@@ -104,20 +78,15 @@ const IndexPage = () => (
 									<ul className="name">Redux</ul>
 									<ul className="name">Sass</ul>
 								</div>
-								<Img fluid={data.imageTwo.childImageSharp.fluid} />
-								<span className="name">Personal project of watching movies together with friends.</span>
 							</div>
-							<div className="info-projects__project">
-								<div className="info-projects__list">
-									<ul className="name">React</ul>
-									<ul className="name">BEM</ul>
-									<ul className="name">Redux</ul>
-									<ul className="name">Sass</ul>
-								</div>
-								<Img fluid={data.imageOne.childImageSharp.fluid} />
-								<span className="name">
-									Webpage travel agency about Norwegian destinations and interesting places.
-								</span>
+						</div>
+						<div className="info-container">
+							<div style={{ textAlign: 'center', marginTop: '2rem' }}>
+								<h2>
+									<a href="mailto:hector_faria@hotmail.com" className="contact rainbow">
+										Contact me
+									</a>
+								</h2>
 							</div>
 						</div>
 					</div>

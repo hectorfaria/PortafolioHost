@@ -1,172 +1,182 @@
 .container {
-    max-width: 90vw;
-    margin: 4vh auto;
-    background-color: var(--light-first);
-    box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.5);
-    border-radius: 5px;
+	max-width: 90vw;
+	margin: 4vh auto;
+	background-color: var(--light-first);
+	box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.5);
+	border-radius: 5px;
 }
 
 .header {
-    @media only screen and (max-width: 450px) {
-        height: 14vw;
-    }
+	@media only screen and (max-width: 450px) {
+		height: 14vw;
+	}
 
-    @media only screen and (max-width: 539px) {
-        height: 10vw;
-    }
-
-
-    height: 14vh;
-    border-radius: 5px;
-    background-color: white;
-    border-bottom: var(--light-third);
-    display: flex;
-    justify-content: flex-start;
-    position: relative;
+	@media only screen and (max-width: 539px) {
+		height: 10vw;
+	}
+	height: 14vh;
+	border-radius: 5px;
+	background-color: white;
+	border-bottom: var(--light-third);
+	display: flex;
+	justify-content: flex-start;
+	position: relative;
 }
 
 .content {
-    display: flex;
-    
-    height: 77vh;
+	display: flex;
+
+	height: 77vh;
 }
 
 .sidebar {
-    background-color: var(--grey-first);
-    flex: 0 0 15%;
-    display: flex;
-    flex-direction: column;
-    border-bottom-left-radius: 5px;
-    @media only screen and (max-width: 539px) {
-        height: 86vh;
-    }
-    @media only screen and (max-width: 450px) {
-        height: 86vh;
-    }
+	background-color: var(--grey-first);
+	flex: 0 0 15%;
+	display: flex;
+	flex-direction: column;
+	border-bottom-left-radius: 5px;
+	@media only screen and (max-width: 539px) {
+		height: 86vh;
+	}
+	@media only screen and (max-width: 450px) {
+		height: 86vh;
+	}
 
-    @media only screen and (max-width: 375px) {
-        height: 86vh;
-    }
+	@media only screen and (max-width: 375px) {
+		height: 86vh;
+	}
 }
 
 .review {
-    background-color: var(--light-first);
-    flex: 1;
-    overflow-y: scroll;
-    @media only screen and (max-width: 450px) {
-        width: 80%;
-    }
+	background-color: var(--light-first);
+	flex: 1;
+	overflow-y: scroll;
+	@media only screen and (max-width: 450px) {
+		width: 80%;
+	}
 }
 
 .code-container {
-    align-self: center;
-    background-color: white;
-    display: block;
-    border-radius: 5px;
-    padding: 3%;
-    padding-left: 16%;
-    margin: auto;
-    width: 80%;
-    margin-top: 3%;
-    font-size: 1vw;
-    box-shadow: 0 2vh 2.5vh rgba(0, 0, 0, 0.3);
-    @media only screen and (max-width: 450px) {
-        font-size: 2rem;
-    }
+	align-self: center;
+	background-color: white;
+	display: block;
+	border-radius: 5px;
+	padding: 2%;
+	padding-left: 5%;
+	margin: auto;
+	width: 60%;
+	margin-top: 1%;
+	font-size: 1vw;
+	box-shadow: 0 .5vh .5vh rgba(0, 0, 0, 0.3);
+	@media only screen and (max-width: 450px) {
+		font-size: 2rem;
+	}
 }
 
 .detail {
-    margin-top: 3.5%;
-    display: flex;
-    padding: 4%;
-    background-color: var(--light-first);
-    border-bottom: 1px solid var(--grey-second);
-
-    @media only screen and (max-width: 450px) {
-        flex-direction: column;
-    }
+	margin-top: 1.5%;
+	display: flex;
+	padding: 1.5%;
+	background-color: var(--light-first);
+	border-bottom: 1px solid var(--grey-second);
+	@media only screen and (max-width: 450px) {
+		flex-direction: column;
+	}
 }
 
 .info-container {
-    flex: 0 0 40%;
-    margin-right: 2.5%;
-    border: 1px solid var(--grey-second);
-    background-color: var(--grey-first);
-    border-radius: 5px;
-    color: #0e53a2;
-    box-shadow: 0 2vh 5vh rgba(0, 0, 0, 0.3);
-    padding: 3%;
-    font-size: .8vw;
-    height: 24vh;
+    flex: 0 0 50%;
+    margin-left: 2.5%;
+	border: 1px solid var(--grey-second);
+	background-color: var(--grey-first);
+	border-radius: 5px;
+	color: #0e53a2;
+	box-shadow: 0 2vh 5vh rgba(0, 0, 0, 0.3);
+	padding: 3%;
+	font-size: .8vw;
+	height: 24vh;
 
-    @media only screen and (max-width: 450px) {
-        height: 20vh;
-        font-size: 1.8rem;
-    }
+	@media only screen and (max-width: 450px) {
+		height: 20vh;
+		font-size: 1.8rem;
+	}
 }
 
 .info-projects {
-    flex: 1;
-    background-color: white;
-    box-shadow: 0 2vh 5vh rgba(0, 0, 0, 0.3);
-    border-radius: 5px;
-    position: relative;
-    overflow: hidden;
+	flex: 1;
+	background-color: white;
+	box-shadow: 0 2vh 5vh rgba(0, 0, 0, 0.3);
+	border-radius: 5px;
+	position: relative;
+	overflow: hidden;
+	&__title {
+		font-size: 2vw;
+		display: block;
+		text-align: center;
+		padding: .5%;
+	}
 
-    &__title {
-        font-size: 2vw;
-        display: block;
-        text-align: center;
-        padding: .5%;
-    }
+	&__subtitle {
+		font-size: 1.2vw;
+		color: var(--color-react);
+		margin: 1vw;
+	}
 
-    &__img {
-        height: 60%;
-        width: 100%;
-        display: block;
-        margin: auto;
+	&__img {
+		height: 60%;
+		width: 100%;
+		display: block;
+		margin: 1rem auto;
         border-radius: 5px;
-    }
+        &:hover {
+            filter: blur(1px);
+            -webkit-filter: blur(1px);
+            transition: .5s all;
+		}
+	}
 
-    &__project {
-        display: block;
-        text-align: center;
-        margin: 2%;
-        margin-bottom: 4%;
-        position: relative;
-        z-index: 500;
-    }
+	&__blur {
+		// missing button to go outside
+	}
 
-    &__list {
-        display: flex;
-        flex-direction: row;
-        align-items: stretch;
-    }
+	&__project {
+		display: block;
+		text-align: center;
+		margin: 2%;
+		margin-bottom: 4%;
+		position: relative;
+		z-index: 500;
+	}
 
-    &::before {
-        content: "\201C";
-        font-family: sans-serif;
-        position: absolute;
-        line-height: 1;
-        top: -2.2%;
-        left: -1%;
-        font-size: 18vw;
-        z-index: 10;
-        color: var(--light-second);
-    }
+	&__list {
+		display: flex;
+		flex-direction: row;
+		align-items: stretch;
+	}
+
+	&::before {
+		content: "\201C";
+		font-family: sans-serif;
+		position: absolute;
+		line-height: 1;
+		top: -2.2%;
+		left: -1%;
+		font-size: 18vw;
+		z-index: 10;
+		color: var(--light-second);
+	}
 }
 
 .name {
-    display: block;
-    margin: auto;
-    font-size: .8vw;
-    padding: 2%;
-    border: 1px solid var(--grey-second);
-    margin: .5%;
-    border-radius: 2px;
-
-    @media only screen and (max-width: 450px) {
-        padding: 5px;
-        font-size: 1.2vw;
-    }
+	display: block;
+	margin: auto;
+	font-size: .8vw;
+	padding: 1%;
+	border: 1px solid var(--grey-second);
+	margin: .5%;
+	border-radius: 2px;
+	@media only screen and (max-width: 450px) {
+		padding: .5%;
+		font-size: 1.2vw;
+	}
 }
