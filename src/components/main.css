@@ -86,7 +86,7 @@ html {
 }
 
 .container {
-  max-width: 90vw;
+  max-width: 85vw;
   margin: 4vh auto;
   background-color: var(--light-first);
   box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.5);
@@ -115,7 +115,7 @@ html {
 
 .content {
   display: flex;
-  height: 77vh;
+  height: 73vh;
 }
 
 .sidebar {

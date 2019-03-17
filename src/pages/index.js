@@ -3,6 +3,7 @@ import Layout from '../components/layout';
 import Typed from 'react-typed';
 import { graphql, StaticQuery } from 'gatsby';
 import Img from 'gatsby-image';
+import nodeicon from '../images/SVG/node.svg';
 
 //natur css => http://nature-norge.surge.sh/
 
@@ -31,6 +32,13 @@ const IndexPage = () => (
 						}
 					}
 				}
+				imageFour: file(relativePath: { eq: "4.png" }) {
+					childImageSharp {
+						fluid(maxWidth: 1000) {
+							...GatsbyImageSharpFluid
+						}
+					}
+				}
 			}
 		`}
 		render={(data) => (
@@ -52,22 +60,49 @@ const IndexPage = () => (
 								backSpeed={40}
 								loop
 							/>
-							{/* <div className="code-container__contact">
-								Interested in working with me? <a href="mailto:hector_faria@hotmail.com" className="contact rainbow">
-									Contact me
-									</a>
-							</div> */}
 						</span>
+					</div>
+					<div className="code-container__contact">
+						<img src={nodeicon} className="side-nav__icon" alt="" />
+						Interested in working with me?{' '}
+						<a href="mailto:hector_faria@hotmail.com" className="contact rainbow">
+							Contact me
+						</a>
+
 					</div>
 					<div className="detail">
 						<div className="info-projects">
 							<div className="info-projects__title">Projects</div>
 							<div className="info-projects__project">
+								<h2 className="info-projects__subtitle">Kamina</h2>
+								<span className="name">
+									Webpage travel agency about Colombian nature and Travel packages (Only the inplementation of React.js and Redux).
+								</span>
+								<a
+									className="info-projects__blur"
+									target="_blank"
+									rel="noopener noreferrer"
+									href="https://www.kamina.co/"
+								>
+									<Img className="info-projects__img" fluid={data.imageFour.childImageSharp.fluid} />
+								</a>
+								<div className="info-projects__list">
+									<ul className="name">React</ul>
+									<ul className="name">Redux</ul>
+									<ul className="name">Redux Form</ul>
+								</div>
+							</div>
+							<div className="info-projects__project">
 								<h2 className="info-projects__subtitle">Norge Nature</h2>
 								<span className="name">
 									Webpage travel agency about Norwegian destinations and interesting places.
 								</span>
-								<a className="info-projects__blur" target="_blank" rel="noopener noreferrer" href="http://nature-norge.surge.sh/">
+								<a
+									className="info-projects__blur"
+									target="_blank"
+									rel="noopener noreferrer"
+									href="http://nature-norge.surge.sh/"
+								>
 									<Img className="info-projects__img" fluid={data.imageOne.childImageSharp.fluid} />
 								</a>
 								<div className="info-projects__list">
@@ -80,7 +115,12 @@ const IndexPage = () => (
 							<div className="info-projects__project">
 								<h2 className="info-projects__subtitle">Sudookie Movies</h2>
 								<span className="name">Personal project of watching movies together with friends.</span>
-								<a className="info-projects__blur" target="_blank" rel="noopener noreferrer" href="https://github.com/yardiewizardie/DookieServerSide">
+								<a
+									className="info-projects__blur"
+									target="_blank"
+									rel="noopener noreferrer"
+									href="https://github.com/yardiewizardie/DookieServerSide"
+								>
 									<Img className="info-projects__img" fluid={data.imageTwo.childImageSharp.fluid} />
 								</a>
 								<div className="info-projects__list">
@@ -95,10 +135,13 @@ const IndexPage = () => (
 							</div>
 							<div className="info-projects__project">
 								<h2 className="info-projects__subtitle">Fictive</h2>
-								<span className="name">
-									Social Media app to connect Tumblr users.
-								</span>
-								<a className="info-projects__blur" target="_blank" rel="noopener noreferrer" href="http://fictive-frontend.surge.sh/">
+								<span className="name">Social Media app to connect Tumblr users.</span>
+								<a
+									className="info-projects__blur"
+									target="_blank"
+									rel="noopener noreferrer"
+									href="http://fictive-frontend.surge.sh/"
+								>
 									<Img className="info-projects__img" fluid={data.imageThree.childImageSharp.fluid} />
 								</a>
 								<div className="info-projects__list">
@@ -114,20 +157,33 @@ const IndexPage = () => (
 							<div className="info-container__title">Experience</div>
 
 							<div style={{ marginTop: '5vh' }}>
-								<div style={{ display: 'flex' , justifyContent: 'space-between', margin: '12px', color: 'white'}}>
+								<div
+									style={{
+										display: 'flex',
+										justifyContent: 'space-between',
+										margin: '12px',
+										color: 'white'
+									}}
+								>
 									<h3>Full time Freelancer</h3>
-									<span style={{ fontSize: '12px'}}>Present</span>
+									<span style={{ fontSize: '12px' }}>Present</span>
 								</div>
-								<ul style={{ margin: '30px'}}>
-									<li >Attending clients for their needs.</li>
+								<ul style={{ margin: '30px' }}>
+									<li>Attending clients for their needs.</li>
 									<li>Implementing UX/UI into a maintenable, reusable code.</li>
-
 								</ul>
-								<div style={{ display: 'flex' , justifyContent: 'space-between', margin: '12px', color: 'white'}}>
+								<div
+									style={{
+										display: 'flex',
+										justifyContent: 'space-between',
+										margin: '12px',
+										color: 'white'
+									}}
+								>
 									<h3>Front End Dev - Intelli-next C.A</h3>
-									<span style={{ fontSize: '10px'}}>Feb 2018 - Dec 2018</span>
+									<span style={{ fontSize: '10px' }}>Feb 2018 - Dec 2018</span>
 								</div>
-								<ul style={{ margin: '30px'}}>
+								<ul style={{ margin: '30px' }}>
 									<li>Building the Front End of a PWA (Progressive Web Application). </li>
 									<li>Usage of React.js and known libraries such as React Router, React Helmet.</li>
 									<li>Usage of Webpack 4 for bundling files and code splitting.</li>

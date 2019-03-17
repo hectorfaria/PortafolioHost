@@ -3,7 +3,6 @@ import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
 import Header from './header'
-import SideBar from './sidebar'
 import './main.css'
 
 const Layout = ({ children }) => (
@@ -33,7 +32,6 @@ const Layout = ({ children }) => (
         <div
           className="content"
         >
-          <SideBar />
           {children}
         </div>
         </div>

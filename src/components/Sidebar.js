@@ -23,9 +23,6 @@ export default () => {
 					</li>
 				</Link>
 			</ul>
-			<span className="rainbow" style={{ textAlign: 'center'}}>
-				Made with ❤  - 2019
-			</span>
 		</nav>
 	);
 };
