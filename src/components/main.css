@@ -168,7 +168,7 @@ html {
 }
 @media only screen and (max-width: 450px) {
   .code-container {
-    font-size: 2rem;
+    font-size: 1rem;
   }
 }
 .code-container__contact {
@@ -203,12 +203,12 @@ html {
   color: var(--color-react);
   box-shadow: 0 2vh 5vh rgba(0, 0, 0, 0.3);
   font-size: 0.8vw;
-  height: 70vh;
+  height: fit-content;
 }
 @media only screen and (max-width: 450px) {
   .info-container {
-    height: 20vh;
-    font-size: 1.8rem;
+    height: fit-content;
+    font-size: 1rem;
   }
 }
 .info-container__title {
@@ -216,6 +216,24 @@ html {
   display: block;
   text-align: center;
   padding: 0.5%;
+}
+@media only screen and (max-width: 450px) {
+  .info-container__title {
+    font-size: 5vw;
+  }
+}
+.info-container__stacks {
+  margin: 3rem;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.info-container__stacks--item {
+  margin: 1.5rem;
+}
+@media only screen and (max-width: 375px) {
+  .info-container__stacks h3 {
+    font-size: 0.7rem;
+  }
 }
 
 .info-projects {
@@ -232,6 +250,11 @@ html {
   text-align: center;
   padding: 0.5%;
 }
+@media only screen and (max-width: 450px) {
+  .info-projects__title {
+    font-size: 1.8rem;
+  }
+}
 .info-projects__subtitle {
   font-size: 1.2vw;
   color: var(--color-react);
@@ -243,11 +266,6 @@ html {
   display: block;
   margin: 1rem auto;
   border-radius: 5px;
-}
-.info-projects__img:hover {
-  filter: blur(1px);
-  -webkit-filter: blur(1px);
-  transition: 0.5s all;
 }
 .info-projects__project {
   display: block;
@@ -285,8 +303,7 @@ html {
 }
 @media only screen and (max-width: 450px) {
   .name {
-    padding: 0.5%;
-    font-size: 1.2vw;
+    font-size: 1rem;
   }
 }
 
@@ -350,6 +367,10 @@ html {
   font-size: 0.7vw;
 }
 
+.contact {
+  font-size: 1.6rem;
+}
+
 .sub-title {
   left: 50%;
   top: 65%;
@@ -363,6 +384,11 @@ html {
 @media only screen and (max-width: 450px) {
   .sub-title {
     font-size: 1.3rem;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .sub-title {
+    font-size: 1rem;
   }
 }
 
@@ -421,8 +447,8 @@ html {
   color: white;
 }
 .side-nav__icon {
-  width: 3vw;
-  height: 3vh;
+  width: 4vw;
+  height: 4vh;
   margin-right: 2%;
 }
 .side-nav__new {

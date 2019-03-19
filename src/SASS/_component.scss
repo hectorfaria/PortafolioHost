@@ -69,6 +69,10 @@
 
 }
 
+.contact {
+	font-size: 1.6rem;
+}
+
 .sub-title {
 	left: 50%;
 	top: 65%;
@@ -80,6 +84,9 @@
 	cursor: default;
 	@media only screen and (max-width: 450px) {
 		font-size: 1.3rem;
+	}
+	@media only screen and (max-width: 320px) {
+		font-size: 1rem;
 	}
 }
 
@@ -148,8 +155,8 @@
 	}
 
 	&__icon {
-		width: 3vw;
-		height: 3vh;
+		width: 4vw;
+		height: 4vh;
 		margin-right: 2%;
 	}
 
