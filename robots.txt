@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://hectorfaria.info/sitemap.xml
+Host: https://hectorfaria.info
